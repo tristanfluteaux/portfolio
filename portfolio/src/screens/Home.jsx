@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom";
+import Top from "../components/Header";
+import Project from "../components/Project";
+
+import '../App.css';
+import Landing from "../components/Landing";
 
 
 const Home = () => {
     return (
         <>
-            <h2>Hello there, I'm Tristan Fluteaux</h2>
-            <p>Web Developper junior Fullstack React.js</p>
+        <Top />
+        <Landing />
         </>
     );
 }
