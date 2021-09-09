@@ -4,7 +4,7 @@ import profilPic from '../assets/goodp.JPG'
 const Landing = () => {
     return ( 
         <>
-            <div style={{width: '100%', margin: 'auto'}}>
+            <div style={{width: '100%', height: '70em',  margin: 'auto'}}>
                <Grid className='landing-grid'>
                    <Cell col={12}>
                        {/* <img src={profilPic}
@@ -24,11 +24,11 @@ const Landing = () => {
                             <div className='social-links'>
 
                                 {/* LinkedIn */}
-                                <a href='https://google.com' rel='noopener noreferrer' target='_blank'>
+                                <a href='https://www.linkedin.com/in/tristan-fluteaux/' rel='noopener noreferrer' target='_blank'>
                                     <i className='bi bi-linkedin' aria-hidden='true' />
                                 </a>
                                 {/* Github */}
-                                <a href='https://google.com' rel='noopener noreferrer' target='_blank'>
+                                <a href='https://github.com/tristanfluteaux' rel='noopener noreferrer' target='_blanck'>
                                     <i className='bi bi-github' aria-hidden='true' />
                                 </a>
                             </div>
