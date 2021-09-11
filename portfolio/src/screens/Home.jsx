@@ -1,11 +1,18 @@
-import { Link } from "react-router-dom";
+import Project from "../components/Project";
+
+import '../App.css';
+import Landing from "../components/Landing";
+import Head from "../components/Head";
+import AboutMe from "../components/AboutMe";
 
 
 const Home = () => {
     return (
         <>
-            <h2>Hello there, I'm Tristan Fluteaux</h2>
-            <p>Web Developper junior Fullstack React.js</p>
+        <Head />
+        <Landing />
+        <Project />
+        <AboutMe />
         </>
     );
 }
