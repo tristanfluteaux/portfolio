@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Wecode from '../assets/wecode.png'
 import { Tab, Tabs, Grid, Cell, Card, CardTitle, CardActions, Button, CardMenu, IconButton, CardText } from "react-mdl";
 
 class Project extends Component {
@@ -16,11 +15,11 @@ class Project extends Component {
             <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                 <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://cdn.futura-sciences.com/buildsv6/images/wide1920/9/4/0/940b22eda6_50170334_code-informatique.jpg) center / cover'}}>WeCode</CardTitle>
                 <CardText>
-                    1st Project : using HTML / CSS
+                    1st Projet : HTML / CSS
                 </CardText>
                 <CardActions border>
                     <Button href='https://github.com/tristanfluteaux/wecode' colored>Github</Button>
-                    <Button href='https://we-code.netlify.app/' colored>View</Button>
+                    <Button href='https://we-code.netlify.app/' colored>Link</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
                 </CardMenu>
@@ -30,11 +29,11 @@ class Project extends Component {
             <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                 <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://lh3.googleusercontent.com/proxy/UHFV7IDIe8Ev4UV8DO70CxAVAQTL-XlnRh-GvSdNbDXpN3iROEfvxSVyr-4SkjLXGfkYWTfSd3xTVwSd889WhW4nno_UU6FDBoQ7l7wXBXplMn8LEjkDlDJ5aRkhav9l) center / cover'}}>Kokomo</CardTitle>
                 <CardText>
-                    2nd Project : Cocktail application using React
+                    2nd Projet : Application de cocktail sur React
                 </CardText>
                 <CardActions border>
                     <Button href='https://github.com/WildCodeSchool/remote-fr-june21-kokomo' colored>Github</Button>
-                    <Button colored>View</Button>
+                    <Button colored>Link</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
                 </CardMenu>
@@ -48,7 +47,7 @@ class Project extends Component {
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                     <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cd6baedb-fdd4-435e-b96d-43b11622a285/dd2ceku-a9ce3d71-d601-4522-b3a4-6af3aa847c46.png/v1/fill/w_622,h_350,q_70,strp/pokeball_by_quickboomcg_dd2ceku-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvY2Q2YmFlZGItZmRkNC00MzVlLWI5NmQtNDNiMTE2MjJhMjg1XC9kZDJjZWt1LWE5Y2UzZDcxLWQ2MDEtNDUyMi1iM2E0LTZhZjNhYTg0N2M0Ni5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.0bs7XnOMdXUB9m7WQzMaD2XOM5VCPbv1rp54-RJrvmQ) center / cover'}}>Pokedex</CardTitle>
                     <CardText>
-                    Geek project : Pokemon application using React (in development)
+                    Projet Geek : Application Pokémon sur React (en développement)
                     </CardText>
                     <CardActions border>
                     <Button href='https://github.com/tristanfluteaux/my-pokedex' colored>Github</Button>
@@ -64,7 +63,7 @@ class Project extends Component {
 
     render() { 
         return (
-        <div className='category-tabs'>
+        <div className='category-tabs' id='section-project'>
             <Tabs activeTab={this.state.activeTab} onChange={(tabId => this.setState({ activeTab : tabId }))} ripple >
                 <Tab>Wild Code School</Tab>
                 <Tab>Side Project</Tab>

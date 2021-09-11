@@ -4,7 +4,7 @@ import profilPic from '../assets/goodp.png'
 const Landing = () => {
     return ( 
         <>
-            <div style={{width: '100%', height: '70em',  margin: 'auto'}}>
+            <div style={{width: '100%', height: '100vh',  margin: 'auto'}} className='test'>
                <Grid className='landing-grid'>
                    <Cell col={12}>
                        <img src={profilPic}
@@ -12,8 +12,8 @@ const Landing = () => {
                         className='avatar-img'
                        />
                        <div className='banner-text'>
-                            <h1>Tristan Fluteaux</h1>
-                            <h1>Full Stack Web Developper</h1>
+                            {/* <h2 className='name'>Tristan Fluteaux</h2> */}
+                            <h1>Full Stack JS Web Developper</h1>
 
                             <hr/>
                             <p>HTML / CSS | JavaScript | React | NodeJS | MySql | Express</p>
@@ -29,7 +29,6 @@ const Landing = () => {
                                     <i className='bi bi-github' aria-hidden='true' />
                                 </a>
                             </div>
-
                        </div>
                    </Cell>
                </Grid>

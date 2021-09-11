@@ -4,6 +4,11 @@
   background: linear-gradient(to left, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.bi bi-cloud-moon {
+
+}
+
+/* Landing page */
 .landing-grid {
   background: #DCE35B;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
@@ -18,11 +23,12 @@
 
 .avatar-img {
   height: 250px;
-  padding-top: 5em;
+  padding-top: 10em;
 }
 
 .banner-text {
-  background-color: black;
+  background: linear-gradient(to right, rgba(36,31,31,1) 0%, rgba(36,31,31,1) 32%, rgba(74,71,70,1) 100%);
+  /* background-color: black; */
   opacity: .8;
   width: 75%;
   margin: auto;
@@ -30,9 +36,16 @@
 }
 
 .banner-text h1 {
-  font-size: 66px;
+  font-size: 55px;
   font-weight: bold;
   color: white;
+}
+
+.name {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  padding-top: 20px;
 }
 
 .banner-text hr {
@@ -60,6 +73,12 @@
   padding: 8px;
 }
 
+.social-links i:hover {
+  color : greenyellow;
+}
+
+/*  Project page */
+
 .category-tabs {
   margin-top: 20px;
 }
@@ -68,5 +87,27 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 80vh;
+  height: 400px;
+}
+
+/* About Me */
+
+.about-right {
+  background: linear-gradient(to right, rgba(36,31,31,1) 0%, rgba(36,31,31,1) 32%, rgba(74,71,70,1) 100%);
+  color: white;
+  padding: 2em;
+}
+
+.about-main {
+  background: #DCE35B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/* Media Screen */
+  @media screen and (max-width: 576px) {
+    .test {
+    height: 100%,
+  }
 }
