@@ -1,11 +1,15 @@
 import { Grid, Cell } from "react-mdl";
 import profilPic from '../assets/goodp.png'
 
-const Landing = () => {
+import './Landing.css'
+
+const Landing = ({ gradientColor }) => {
+
+    console.log(gradientColor)
     return ( 
         <>
-            <div style={{width: '100%', height: '100vh',  margin: 'auto'}} className='test'>
-               <Grid className='landing-grid'>
+            <div className='landing-main'>
+               <Grid className={gradientColor ? 'landing-grid' : 'landing-grid-dm'}>
                    <Cell col={12}>
                        <img src={profilPic}
                         alt='avatar'
