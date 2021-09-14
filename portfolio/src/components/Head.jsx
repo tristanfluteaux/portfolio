@@ -1,23 +1,22 @@
-import React, {  useState } from "react";
+import React from "react";
 import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
 
-import '../App.css';
+import './Head.css'
 
-const Head = () => {
+const Head = ({gradientColor, setGradientColor}) => {
 
-    const [gradientColor, setGradientColor ] = useState(true);
 
 
     const HandleClickColor = () => {
         setGradientColor(!gradientColor)
     }
 
-
+    
     return (
         
 <div className='demo-big-content'>
-    <Layout style={{height: '70vh'}}>
-        <Header className='header-color' title='My Portfolio' scroll>
+    <Layout style={{height: '30%'}}>
+        <Header className={gradientColor ? 'header-color' : 'header-color-dm'} title='My Portfolio' scroll>
             <Navigation>
         <i id={HandleClickColor} className={gradientColor ? 'bi bi-cloud-moon' : 'bi bi-cloud-moon-fill'} onClick={HandleClickColor} aria-hidden='true' style={{fontSize: '30px'}}/>
                 <a href="#/">Home</a>

@@ -4,15 +4,19 @@ import '../App.css';
 import Landing from "../components/Landing";
 import Head from "../components/Head";
 import AboutMe from "../components/AboutMe";
+import { useState } from "react/cjs/react.development";
 
 
 const Home = () => {
+
+    const [gradientColor, setGradientColor ] = useState(true);
+
     return (
         <>
-        <Head />
-        <Landing />
+        <Head gradientColor={gradientColor} setGradientColor={setGradientColor}/>
+        <Landing gradientColor={gradientColor} />
         <Project />
-        <AboutMe />
+        <AboutMe gradientColor={gradientColor} />
         </>
     );
 }

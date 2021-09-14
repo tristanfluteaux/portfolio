@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Tab, Tabs, Grid, Cell, Card, CardTitle, CardActions, Button, CardMenu, IconButton, CardText } from "react-mdl";
 
+import './Project.css';
+
 class Project extends Component {
     constructor(props) {
         super(props);
@@ -15,7 +17,7 @@ class Project extends Component {
             <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                 <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://cdn.futura-sciences.com/buildsv6/images/wide1920/9/4/0/940b22eda6_50170334_code-informatique.jpg) center / cover'}}>WeCode</CardTitle>
                 <CardText>
-                    1st Projet : HTML / CSS
+                    1st Projet : vitrine responsive sur le monde numérique HTML / CSS
                 </CardText>
                 <CardActions border>
                     <Button href='https://github.com/tristanfluteaux/wecode' colored>Github</Button>
@@ -27,13 +29,27 @@ class Project extends Component {
 
             {/* Project 2 */}
             <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://lh3.googleusercontent.com/proxy/UHFV7IDIe8Ev4UV8DO70CxAVAQTL-XlnRh-GvSdNbDXpN3iROEfvxSVyr-4SkjLXGfkYWTfSd3xTVwSd889WhW4nno_UU6FDBoQ7l7wXBXplMn8LEjkDlDJ5aRkhav9l) center / cover'}}>Kokomo</CardTitle>
+                <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images.pexels.com/photos/109275/pexels-photo-109275.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) center / cover'}}>Kokomo</CardTitle>
                 <CardText>
-                    2nd Projet : Application de cocktail sur React
+                    2nd Projet : Application responsive de cocktail sur React
                 </CardText>
                 <CardActions border>
                     <Button href='https://github.com/WildCodeSchool/remote-fr-june21-kokomo' colored>Github</Button>
-                    <Button colored>Link</Button>
+                    <Button href='https://wild-kokomo.netlify.app/' colored>Link</Button>
+                </CardActions>
+                <CardMenu style={{color: '#fff'}}>
+                </CardMenu>
+            </Card>
+
+            {/* Project 3 */}
+            <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images.pexels.com/photos/7829101/pexels-photo-7829101.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) center / cover'}}>StarLove</CardTitle>
+                <CardText>
+                    Hackathon : Application de rencontre intergalactique sur le thème de StarWars réalisé en 35h sur React
+                </CardText>
+                <CardActions border>
+                    <Button href='https://github.com/tristanfluteaux/r5d5' colored>Github</Button>
+                    <Button href='' colored>Link</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
                 </CardMenu>
@@ -51,7 +67,7 @@ class Project extends Component {
                     </CardText>
                     <CardActions border>
                     <Button href='https://github.com/tristanfluteaux/my-pokedex' colored>Github</Button>
-                    <Button colored>View</Button>
+                    <Button colored>Link</Button>
                     </CardActions>
                     <CardMenu style={{color: '#fff'}}>
                     </CardMenu>

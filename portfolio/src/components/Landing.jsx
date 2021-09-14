@@ -1,22 +1,36 @@
 import { Grid, Cell } from "react-mdl";
+import Typewriter from 'typewriter-effect';
 import profilPic from '../assets/goodp.png'
 
-const Landing = () => {
+
+import './Landing.css'
+
+const Landing = ({ gradientColor }) => {
+
+    const loop = <Typewriter
+    options={{
+    strings: ['JavaScript', 'React', 'NodeJs'],
+    autoStart: true,
+    loop: true,
+    }}
+    />
+
     return ( 
         <>
-            <div style={{width: '100%', height: '100vh',  margin: 'auto'}} className='test'>
-               <Grid className='landing-grid'>
+            <div className='landing-main'>
+               <Grid className={gradientColor ? 'landing-grid' : 'landing-grid-dm'}>
                    <Cell col={12}>
                        <img src={profilPic}
                         alt='avatar'
                         className='avatar-img'
                        />
                        <div className='banner-text'>
-                            {/* <h2 className='name'>Tristan Fluteaux</h2> */}
-                            <h1>Full Stack JS Web Developper</h1>
+                            <h1 className='name'>Tristan Fluteaux</h1>
+                            <h1>Développeur web Full Stack <span style={{color: 'yellow'}}>{loop}</span></h1>
+   
 
                             <hr/>
-                            <p>HTML / CSS | JavaScript | React | NodeJS | MySql | Express</p>
+                            <p>HTML / CSS | JavaScript | React | NodeJs | MySql | Express</p>
 
                             <div className='social-links'>
 
