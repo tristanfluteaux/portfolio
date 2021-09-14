@@ -5,11 +5,11 @@ const Experience = (props) => {
         <div>
            <Grid>
                 <Cell col={4}>
-                    <p>{props.startYear}</p>
+                    <p className='text'>{props.startYear}</p>
                 </Cell>
                 <Cell col={8}>
                     <h4 style={{marginTop: '0px'}}>{props.job}</h4>
-                    <p>{props.jobDescription}</p>
+                    <p className='text'>{props.jobDescription}</p>
                 </Cell>
             </Grid> 
         </div>

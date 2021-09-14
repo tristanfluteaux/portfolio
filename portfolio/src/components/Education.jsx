@@ -5,11 +5,11 @@ const Education = (props) => {
         <div>
             <Grid>
                 <Cell col={4}>
-                    <p>{props.startYear}</p>
+                    <p className='text'>{props.startYear}</p>
                 </Cell>
                 <Cell col={8}>
                     <h4 style={{marginTop: '0px'}}>{props.school}</h4>
-                    <p>{props.description}</p>
+                    <p className='text'>{props.description}</p>
                 </Cell>
             </Grid>
         </div>
