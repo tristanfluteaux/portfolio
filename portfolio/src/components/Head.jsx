@@ -28,7 +28,7 @@ const Head = ({gradientColor, setGradientColor}) => {
             <Navigation>
                 <a href="#/">Home</a>
                 <a href="#section-project">Projet</a>
-                <a href="#">A propos de moi</a>
+                <a href="#">A propos</a>
             </Navigation>
         </Drawer>
         <Content />
