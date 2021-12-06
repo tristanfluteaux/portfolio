@@ -21,7 +21,7 @@ const Head = ({gradientColor, setGradientColor}) => {
         <i id={HandleClickColor} className={gradientColor ? 'bi bi-cloud-moon' : 'bi bi-cloud-moon-fill'} onClick={HandleClickColor} aria-hidden='true' style={{fontSize: '30px'}}/>
                 <a href="#/">Home</a>
                 <a href="#section-project">Projet</a>
-                <a href="#about-main">A propos de moi</a>
+                <a href="#about-main">A propos</a>
             </Navigation>
         </Header>
         <Drawer title={<i className='bi bi-controller' aria-hidden='true' style={{fontSize: '50px', }}/>}>
